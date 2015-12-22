@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="box"></div>
+	
+	<script src="lib/icat/0.0.1/icat.min.js"></script>
+	<script src="build/counter.js"></script>
+	<script>
+		ICAT.react['./Counter/Counter']({
+			el: document.querySelector('#box'),
+			argus: {
+				value: 10
+			}
+		});
+	</script>
+</body>
+</html>
